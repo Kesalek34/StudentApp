@@ -42,7 +42,7 @@ public class AddStudentServlet extends HttpServlet {
   
   
   Student students = createStudent(id,firstName,lastName,gender,age,perMark);
-  cfl.create(students);
+  cfl.createStudent(students);
   request.setAttribute("students", students);
   
   

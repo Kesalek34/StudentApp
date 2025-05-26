@@ -5,6 +5,8 @@
         <group>
             <file>file:/C:/Users/kesao/OneDrive/Documents/NetBeansProjects/TechWebApp/web/add_student.jsp</file>
             <file>file:/C:/Users/kesao/OneDrive/Documents/NetBeansProjects/TechWebApp/src/java/za/ac/tut/servlet/AddStudentServlet.java</file>
+            <file>file:/C:/Users/kesao/OneDrive/Documents/NetBeansProjects/TechWebApp/web/login.jsp</file>
+            <file>file:/C:/Users/kesao/OneDrive/Documents/NetBeansProjects/TechWebApp/web/loginError.jsp</file>
         </group>
     </open-files>
 </project-private>

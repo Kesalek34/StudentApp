@@ -45,4 +45,42 @@
             30
         </session-timeout>
     </session-config>
+    <security-constraint>
+        <display-name>TeacherConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>TeacherResources</web-resource-name>
+            <description>Resources available to a teacher</description>
+            <url-pattern>/add_student.jsp</url-pattern>
+            <url-pattern>/findStudent.jsp</url-pattern>
+            <url-pattern>/getTestStatics.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Enable authentication of teacher</description>
+            <role-name>teacher </role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>StudentConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>StudentResources</web-resource-name>
+            <description>Resources available to students</description>
+            <url-pattern>/getStudentsAge.jsp</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>FRealm</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/loginError.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description>Can add,age,specificage</description>
+        <role-name>teacher </role-name>
+    </security-role>
+    <security-role>
+        <description>Can find ,specificname</description>
+        <role-name>student</role-name>
+    </security-role>
 </web-app>
